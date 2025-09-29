@@ -1,0 +1,128 @@
+body{
+    background: linear-gradient(to bottom, #e7e1d9, #b6a9a9);
+    font-family: "shoujin";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.tn1{
+    width: 100%;
+    background-image: url(../images/abg.png);
+    background-position: center center;
+    /* 背景图不平铺  */
+    background-repeat: no-repeat;
+    /* 让背景图基于容器大小伸缩  */
+    background-size: cover; 
+    position: relative;
+    min-height: 100vh;
+
+}
+.card {
+    position: relative;
+    margin: 0 auto; 
+    padding-top: 4%;
+    width: 85%;
+    height: 90%;
+}
+
+.tn2{
+    position:relative;
+    margin: 3%;
+    float: left;
+    margin-top: 7%;
+}
+/* 图片翻转 */
+.item{
+    /* 相对定位 */
+
+    width: 335px;
+    height: 426px; 
+
+    /* 视距 */
+    perspective: 600px;
+}
+
+.imgc {
+    /* 绝对定位 */
+    position: absolute;
+    /* 设置旋转的基点为右边 */
+    transform-origin: right;
+    /* 图片默认沿Y轴旋转0度,不透明度为1 */
+    transform: rotateY(0deg);
+    opacity: 1;
+    /* 设置过渡 */
+    transition: 0.5s;
+
+}
+.imgc img{
+    height: 426px;
+    width: 335px;
+}
+.caption{
+    position: absolute;
+    z-index: 0;
+    background-color: #bfab9f;
+    color: #ffffff;
+    width: 82%;
+    height: 95%;
+    padding: 0 3% 0 7%;
+    margin: 0 10%;
+    /* 元素的宽度和高度包含内边距和边框 */
+    box-sizing: border-box;
+    /* 字间距 */
+    letter-spacing: 2px;
+    /* 弹性布局 垂直排列 垂直居中 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* 设置旋转的基点为左边 */
+    transform-origin: left;
+    /* 文字默认沿Y轴旋转90度,不透明度为0 */
+    transform: rotateY(90deg);
+    opacity: 0;
+    /* 过渡 */
+    transition: 0.5s;
+    margin-top: 3%;
+    border-radius:10px;
+    box-shadow:0 0 10px #bfab9f, 0 0 20px #bfab9f, 0 0 30px #bfab9f
+}
+.item:hover .img{
+    /* 悬停时图片消失 */
+    transform: rotateY(-90deg);
+    opacity: 0;
+}
+.item:hover .caption{
+    /* 悬停时文字显示 */
+    transform: rotateY(0deg);
+    opacity: 1;
+}
+
+.caption h3{
+    font-size:40px ;
+    /* margin-bottom: 15px; */
+    margin-bottom: 2%;
+    margin-top: 0;
+}
+.caption p{
+    font-size: 25px;
+    margin-top: 0;
+}
+.yun1{
+    width: 1040px;
+    position: absolute;
+    top: 70px;
+    left: 70px;
+}
+.yun2{
+    position: absolute;
+    bottom: 0px;
+}
+/* .have{
+    padding: 0 20px;
+} */
+.back{
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+}

@@ -1,0 +1,105 @@
+body{
+    background: linear-gradient(to bottom, #e7e1d9, #b6a9a9);
+    font-family: "shoujin";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.g1{
+    width: 100%;
+    background-image: url(../images/abg.png);
+    background-position: center center;
+    /* 背景图不平铺  */
+    background-repeat: no-repeat;
+    /* 让背景图基于容器大小伸缩  */
+    background-size: cover; 
+    position: relative;
+    min-height: 100vh;
+}
+.g1 .one{
+    position: absolute;
+    width: 30%;
+    margin-left: 10%;
+    height: 700px;
+    overflow: hidden;
+    opacity: 1;
+    transition: 1s;
+    top:0;
+}
+
+.one:nth-child(1){
+    top: -100%;
+    opacity: 0;
+}
+/* .one:nth-child(2){
+    top: 100%;
+    opacity: 0;
+} */
+.one:nth-child(3){
+    top: 100%;
+    opacity: 0;
+}
+.one:nth-child(4){
+    top: 100%;
+    opacity: 0;
+}
+.one1{
+    display: block;
+    font-family: "古风";
+    color: #6a1b1b;
+    font-size: 250px;
+    height: 310px;
+}
+.one2{
+    font-size: 25px;
+    color: #441107;
+    letter-spacing: 4px;
+    writing-mode: vertical-rl;
+    padding-left: 50%;
+}
+.di{
+    width: 300px;
+    position: absolute;
+    bottom: 40px;
+    left: 95px;
+}
+.gimg{
+    position: absolute;
+    width:850px ;
+    right: 7%;
+    padding-top: 5%;
+}
+.i1{
+    position: absolute;
+    width: 850px;
+    opacity: 1;
+    transition: 1s;
+}
+.i1:nth-child(1){
+    opacity: 0;
+}
+/* .i1:nth-child(2){
+    opacity: 0;
+} */
+.i1:nth-child(3){
+    opacity: 0;
+}
+.i1:nth-child(4){
+    opacity: 0;
+}
+.buttons{
+    height: 100%;
+    width: 110px;
+    position: absolute;
+    top: 30px;
+    left: 23%;
+}
+.s_button{
+    position: absolute;
+    text-align: center;
+}
+.s_button1{
+    bottom: 65px;
+    position: absolute;
+    text-align: center;
+}

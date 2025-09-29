@@ -1,0 +1,108 @@
+body{
+    background: linear-gradient(to bottom, #e7e1d9, #b6a9a9);
+    font-family: "shoujin";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.c1{
+    width: 100%;
+    position: relative;
+}
+
+.gu{
+    position: absolute;
+    left: 0;
+    transition: 3s;
+}
+.jin{
+    position: absolute;
+    right: 0;
+    transition: 3s;
+}
+.next{
+    position: absolute;
+    width: 40%;
+    left: 430px;
+    opacity: 0;
+}
+.imgbg{
+    position: absolute;
+    opacity: 0.3;
+    /* background-image: url(../images/chuannext.png); */
+    /* height: 100vh; */
+    transition: 3s;
+}
+.gu p{
+    font-size: 25px;
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    letter-spacing: 2px;
+    line-height:1.5;
+    color: #441107;
+}
+.jin p{
+    font-size: 25px;
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    right:100px;
+    bottom: 0;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    color: #441107;
+}
+.contain{
+    position: absolute;
+    left: 26%;
+    height: 500px;
+    margin-top: 10%;
+    width: 50%;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.574);
+    opacity: 0;
+    z-index: -1;
+    transition: 3s;
+    /* animation: appearbox 2s; */
+
+}
+/* @keyframes appearbox {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+} */
+
+.appear{
+    padding: 50px;
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    color: #441107;
+}
+#gu1{
+    height: 100vh;
+    transition: 3s;
+}
+#jin1{
+    height: 100vh;
+    transition: 3s;
+}
+#cn{
+    height: 100vh;
+    transition: 3s;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.back{
+    position: absolute;
+    bottom: -70px;
+    left: -350px;
+}

@@ -1,0 +1,85 @@
+body{
+    background: linear-gradient(to bottom, #e7e1d9, #b6a9a9);
+    font-family: "shoujin";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.t1{
+    width: 100%;
+    background-image: url(../images/abg.png);
+    background-position: center center;
+    /* 背景图不平铺  */
+    background-repeat: no-repeat;
+    /* 让背景图基于容器大小伸缩  */
+    background-size: cover; 
+    position: relative;
+    min-height: 100vh;
+}
+.dragon{
+    position: absolute;
+    top: 100px;
+    left:0;
+}
+.taiji{
+    position: relative;
+    width: 700px;
+    height: 700px;
+    margin: auto;
+    top: 30px;
+    transition: 1s;
+    transform-origin: 50% 50%;  /*中心点*/
+    animation: rotate 10s linear infinite;  /*开始动画后无限循环，用来控制rotate*/
+}
+.taiji p{
+    position: absolute;
+    opacity: 0;
+    font-size: 50px;
+    color: #9c321d;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.taiji p:nth-child(2){
+    top: 110px;
+    left: 100px;
+}
+.taiji p:nth-child(3){
+    top: -20px;
+    left: 336px;
+}
+.taiji p:nth-child(4){
+    top: 110px;
+    right: 15px;
+}
+.taiji p:nth-child(5){
+    top: 415px;
+    left: 100px;
+}
+.taiji p:nth-child(6){
+    bottom: -5px;
+    left: 310px;
+}
+.taiji p:nth-child(7){
+    top: 415px;
+    right: 45px;
+}
+#tj{
+    transition: 1s;
+}
+.yun{
+    position: absolute;
+    right: -30px;
+    top: -30px;
+}
+.introduce{
+    position: absolute;
+    top: 55%;
+    right: 2%;
+    font-size: 25px;
+    width: 400px;
+    height: 350px;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    color: #441107;
+    transition: 1s;
+}
